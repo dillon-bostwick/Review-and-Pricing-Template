@@ -57,7 +57,8 @@ Sub gettype()
             For csrw = 2 To lastcomprw ' csrw: compiled sheet row
                 exists = False
                 For arw = 2 To totalin ' arw: Temp sheet row
-                    If ActiveWorkbook.Sheets("Temp").Cells(arw, acl) = Sheets("Tile Selections").Cells(csrw, 6) Then
+                    If ActiveWorkbook.Sheets("Temp").Cells(arw, acl) = 
+                       Sheets("Tile Selections").Cells(csrw, 6) Then
                         exists = True
                         Exit For
                     End If
@@ -128,7 +129,8 @@ Sub getdimension()
                 exists = False
                 For arw = 2 To totalin ' arw: Temp sheet row
             
-                    If ActiveWorkbook.Sheets("Temp").Cells(arw, acl) = Sheets("Tile Selections").Cells(csrw, 7) Then
+                    If ActiveWorkbook.Sheets("Temp").Cells(arw, acl) = 
+                       Sheets("Tile Selections").Cells(csrw, 7) Then
                         exists = True
                         Exit For
                     End If
@@ -139,7 +141,8 @@ Sub getdimension()
                     Sheets("Tile Selections").Cells(csrw, 5)) And 
                    (Cells(acl - 95, 19) = Sheets("Tile Selections").Cells(csrw, 6)) Then
 
-                    ActiveWorkbook.Sheets("Temp").Cells(totalin + 1, acl) = Sheets("Tile Selections").Cells(csrw, 7)
+                    ActiveWorkbook.Sheets("Temp").Cells(totalin + 1, acl) = 
+                     Sheets("Tile Selections").Cells(csrw, 7)
                     totalin = totalin + 1
                 End If
 
@@ -302,7 +305,8 @@ Do Until Cells(acl + 1, 1) = "TOTAL"
             exists = False
             For arw = 2 To totalin ' arw: Temp sheet row
             
-                If ActiveWorkbook.Sheets("Temp").Cells(arw, acl) = Sheets("Tile Selections").Cells(csrw, 5) Then
+                If ActiveWorkbook.Sheets("Temp").Cells(arw, acl) = 
+                   Sheets("Tile Selections").Cells(csrw, 5) Then
                     exists = True
                     Exit For
                 End If
